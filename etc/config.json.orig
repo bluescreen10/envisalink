@@ -1,0 +1,11 @@
+{
+  "server": {
+    "port": 9000
+  },
+  
+  "agent": {
+    "host": "192.168.1.100",
+    "port": 4025,
+    "password": "user"
+  }
+}

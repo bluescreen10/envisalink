@@ -1,0 +1,16 @@
+{
+  "name": "envisalink",
+  "version": "0.0.1",
+  "description": "Envisalink Server",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariano Wahlmann",
+  "license": "GPLv3",
+  "dependencies": {
+    "express": "*",
+    "q": "*",
+    "bunyan": "*"
+  }
+}
