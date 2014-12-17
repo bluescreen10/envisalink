@@ -10,7 +10,7 @@ var logger = bunyan.createLogger({
   name: 'app',
   streams: [{
     level: 'debug',
-    path: '/var/log/envisalink.log'
+    path: 'envisalink.log'
   }, {
     level: 'info',
     type: 'raw',

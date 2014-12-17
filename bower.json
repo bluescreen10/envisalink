@@ -1,0 +1,19 @@
+{
+  "name": "envisalink",
+  "version": "0.0.1",
+  "license": "GPLv3",
+  "appPath": "src",
+  "dependencies": {
+    "polymer": "Polymer/polymer#*",
+    "font-roboto": "Polymer/font-roboto#*",
+    "core-drawer-panel": "Polymer/core-drawer-panel#*",
+    "core-header-panel": "Polymer/core-header-panel#*",
+    "core-menu": "Polymer/core-menu#*",
+    "core-toolbar": "Polymer/core-toolbar#*",
+    "paper-dropdown": "Polymer/paper-dropdown#*",
+    "paper-icon-button": "Polymer/paper-icon-button#*",
+    "paper-item": "Polymer/paper-item#*",
+    "paper-menu-button": "Polymer/paper-menu-button#*",
+    "paper-tabs": "Polymer/paper-tabs#*"
+  }
+}

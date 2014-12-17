@@ -11,6 +11,26 @@
   "dependencies": {
     "express": "*",
     "q": "*",
+    "bower": "*",
     "bunyan": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-express-server": "*",
+    "grunt-filerev": "*",
+    "grunt-google-cdn": "*",
+    "grunt-usemin": "*",
+    "jshint-stylish": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
   }
 }

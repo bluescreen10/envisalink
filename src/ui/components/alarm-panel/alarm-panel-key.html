@@ -1,0 +1,90 @@
+<link rel="import" href="/bower_components/paper-ripple/paper-ripple.html">
+
+<polymer-element name="el-panel-key" on-down="{{downAction}}" on-up="{{upAction}}">
+  
+  <template>
+    
+    <style>
+      
+      :host {
+      display: block;
+      position: relative;
+      }
+      
+      #keyLabel, .ink-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      }
+      
+      #keyLabel {
+      pointer-events: none;
+      }
+      
+      .ink-center {
+      position: relative;
+      width: 0;
+      height: 0;
+      }
+      
+      #ink {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      color: rgb(241, 250, 65);
+      pointer-events: none;
+      }
+      
+      .small {
+      font-size: smaller;
+      }
+      
+    </style>
+    
+    <div class="ink-container" horizontal center-justified center layout>
+      <div class="ink-center">
+        <paper-ripple id="ink" class="circle recenteringTouch" initialOpacity="0.85" opacityDecayVelocity="2"></paper-ripple>
+      </div>
+    </div>
+    
+    <div id="keyLabel" horizontal center-justified center layout>{{label}}</div>
+    
+  </template>
+  
+  <script>
+    
+    Polymer('el-panel-key', {
+    
+    publish: {
+    label: {reflect: true}
+    },
+    
+    labelChanged: function() {
+    },
+    
+    downAction: function(e) {
+    this.$.ink.downAction(e);
+    },
+    
+    upAction: function() {
+    this.$.ink.upAction();
+    },
+    
+    cancelKey: function(e) {
+    e.preventTap();
+    this.resetInk();
+    },
+    
+    resetInk: function() {
+    this.$.ink.cancel();
+    }
+    
+    });
+    
+  </script>
+  
+</polymer-element>
